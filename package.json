@@ -9,13 +9,13 @@
       "commit-msg": "simple",
       "pre-commit": [
         "npm prune",
-        "echo skipped npm run deps",
+        "echo skip npm run deps",
         "npm test",
         "git add src/*.js",
         "npm run ban"
       ],
       "pre-push": [
-        "npm run unused-deps",
+        "echo skip npm run unused-deps",
         "npm run secure",
         "npm run license",
         "npm run ban -- --all",
