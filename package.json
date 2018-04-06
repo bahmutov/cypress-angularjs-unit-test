@@ -1,7 +1,7 @@
 {
   "name": "cypress-angularjs-unit-test",
   "description": "Unit test Angularjs code using Cypress.io test runner",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": "https://github.com/bahmutov/cypress-angularjs-unit-test/issues",
   "config": {
@@ -74,7 +74,9 @@
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "cypress run",
     "cy": "cypress open",
-    "unused-deps": "dependency-check --unused --no-dev ."
+    "unused-deps": "dependency-check --unused --no-dev .",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "ban-sensitive-files": "1.9.2",
@@ -86,7 +88,9 @@
     "pre-git": "3.17.1",
     "prettier-standard": "8.0.1",
     "standard": "11.0.1",
-    "cypress": "2.1.0"
+    "cypress": "2.1.0",
+    "travis-deploy-once": "^4.4.1",
+    "semantic-release": "^15.1.5"
   },
   "peerDependencies": {
     "angular": "^1.6.9",
