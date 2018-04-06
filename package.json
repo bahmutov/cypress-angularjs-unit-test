@@ -88,9 +88,11 @@
     "standard": "11.0.1",
     "cypress": "2.1.0"
   },
-  "dependencies": {
+  "peerDependencies": {
     "angular": "^1.6.9",
     "cypress": "^2.1.0"
+  },
+  "dependencies": {
+    "angular": "1.6.9"
   }
 }
-
