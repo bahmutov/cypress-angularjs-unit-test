@@ -2,7 +2,13 @@
 import angular from 'angular'
 
 /* global cy */
-export const mount = (template, modules = []) => {
+export const mount = function (template, modules = []) {
+  if (arguments.length === 1) {
+    // test did not pass a template, just list of modules
+    modules = template
+    template = ''
+  }
+
   const html = `
     <head>
       <meta charset="UTF-8">

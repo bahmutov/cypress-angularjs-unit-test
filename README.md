@@ -35,7 +35,7 @@ it('works', () => {
 
 ### Basic example
 
-See [cypress/integration/basic.js](cypress/integration/basic.js)
+See [cypress/integration/basic-spec.js](cypress/integration/basic-spec.js)
 
 ```js
 import {mount} from 'cypress-angularjs-unit-test'
