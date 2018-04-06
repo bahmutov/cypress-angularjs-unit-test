@@ -91,8 +91,5 @@
   "peerDependencies": {
     "angular": "^1.6.9",
     "cypress": "^2.1.0"
-  },
-  "dependencies": {
-    "angular": "1.6.9"
   }
 }
