@@ -14,7 +14,7 @@ export const mount = function (template, modules = []) {
       <meta charset="UTF-8">
     </head>
     <body>
-    ${template}
+      ${template}
     </body>
   `
   const document = cy.state('document')
