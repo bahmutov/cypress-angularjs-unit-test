@@ -66,8 +66,15 @@ it('shows hello', () => {
 })
 ```
 
+## Examples
+
+* Testing a value in [value-spec.js](cypress/integration/value-spec.js)
+* [filter](cypress/src/reverse.js) and [filter-spec.js](cypress/integration/filter-spec.js)
+
 ## Notes
 
+* `npm run cy` opens Cypress end-to-end test runner in GUI mode
+* `npm test` runs Cypress in headless mode
 * `mount` uses [`angular.bootstrap`](https://docs.angularjs.org/api/ng/function/angular.bootstrap) to mount code inside the test iframe.
 
 ### Small print
