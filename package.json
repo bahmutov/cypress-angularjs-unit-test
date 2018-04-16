@@ -46,6 +46,9 @@
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
   },
+  "standard": {
+    "globals": ["cy", "expect"]
+  },
   "release": {
     "analyzeCommits": {
       "preset": "angular",
@@ -66,10 +69,10 @@
     "deps": "deps-ok && dependency-check --no-dev .",
     "issues": "git-issues",
     "license": "license-checker --production --onlyunknown --csv",
-    "lint": "standard --verbose --fix src/*.js",
+    "lint": "standard --verbose --fix 'src/*.js' 'cypress/integration/*.js'",
     "prelint": "npm run pretty",
     "pretest": "npm run lint",
-    "pretty": "prettier-standard 'src/*.js'",
+    "pretty": "prettier-standard 'src/*.js' 'cypress/integration/*.js'",
     "secure": "nsp check",
     "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";",
     "test": "cypress run",

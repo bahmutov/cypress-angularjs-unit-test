@@ -9,23 +9,28 @@ export const mount = function (template, modules = []) {
     template = ''
   }
 
+  // must inject into a "div" and not into "document" directly,
+  // Angular.js goes up to "html" parent element
+  // and stores its state there, affecting every test afterwards
   const html = `
     <head>
       <meta charset="UTF-8">
     </head>
     <body>
-      ${template}
+      <div id="app">
+        ${template}
+      </div>
     </body>
   `
+
   const document = cy.state('document')
   document.write(html)
   document.close()
 
   cy.window().then(w => {
-    // set the Angular library reference
-    // into the test iframe
     w.angular = angular
-    cy.log('Angular.js', angular.version.full)
-    angular.bootstrap(document, modules)
+    cy.log('Angular.js', w.angular.version.full)
+    const el = document.getElementById('app')
+    w.angular.bootstrap(el, modules)
   })
 }
