@@ -48,6 +48,8 @@ angular.module('demo', [])
   });
 
 beforeEach(() => {
+  // let's mount our "demo" module and its controller
+  // in a "mini app" before each test
   const template = `
     <div ng-controller="WelcomeController">
       {{greeting}}
@@ -58,9 +60,15 @@ beforeEach(() => {
 })
 
 it('shows hello', () => {
+  // "WelcomeController" should have replaced template
+  // expression {{greeting}} with actual text
   cy.contains('div', 'Welcome!').should('be.visible')
 })
 ```
+
+## Notes
+
+* `mount` uses [`angular.bootstrap`](https://docs.angularjs.org/api/ng/function/angular.bootstrap) to mount code inside the test iframe.
 
 ### Small print
 
