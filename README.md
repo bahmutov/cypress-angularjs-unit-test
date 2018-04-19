@@ -9,6 +9,12 @@
 [![standard][standard-image]][standard-url]
 [![renovate-app badge][renovate-badge]][renovate-app]
 
+## Motivation
+
+You can use [Cypress.io](https://cypress.io) to end-to-end test any application, but what if you want to test your Angular.js values, services, controllers and components individually? This adaptor allows you to do this very quickly. See each test run as a mini app inside a real browser, go back in time using DOM snapshot, etc - all the good things [available in E2E tests are working in unit tests](https://www.cypress.io/blog/2018/04/02/sliding-down-the-testing-pyramid/).
+
+![Cypress screenshot](images/screenshot.png)
+
 ## Install
 
 Requires [Node](https://nodejs.org/en/) version 6 or above.
