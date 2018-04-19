@@ -71,6 +71,7 @@ it('shows hello', () => {
 * Testing a value in [value-spec.js](cypress/integration/value-spec.js)
 * [filter](cypress/src/reverse.js) and [filter-spec.js](cypress/integration/filter-spec.js)
 * [component](cypress/src/hero-detail.js) and [component-spec.js](cypress/integration/component-spec.js)
+* Loading test HTML template from a fixture in [fixture-spec.js](cypress/integration/fixture-spec.js)
 
 ## Notes
 
