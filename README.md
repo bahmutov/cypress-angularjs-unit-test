@@ -70,12 +70,15 @@ it('shows hello', () => {
 
 * Testing a value in [value-spec.js](cypress/integration/value-spec.js)
 * [filter](cypress/src/reverse.js) and [filter-spec.js](cypress/integration/filter-spec.js)
+* [component](cypress/src/hero-detail.js) and [component-spec.js](cypress/integration/component-spec.js)
 
 ## Notes
 
 * `npm run cy` opens Cypress end-to-end test runner in GUI mode
 * `npm test` runs Cypress in headless mode
 * `mount` uses [`angular.bootstrap`](https://docs.angularjs.org/api/ng/function/angular.bootstrap) to mount code inside the test iframe.
+
+Cypress can do everything [you can do from DevTools console](https://glebbahmutov.com/blog/angular-from-browser-console/) when dealing with Angular.js application.
 
 ### Small print
 
