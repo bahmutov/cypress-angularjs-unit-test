@@ -6,7 +6,7 @@ import angular from 'angular'
 describe('Fixture', () => {
   // setup module with a controller to test
 
-  angular.module('demo', []).controller('WelcomeController', ($scope) => {
+  angular.module('demo', []).controller('WelcomeController', $scope => {
     $scope.greeting = 'Welcome!'
     $scope.version = angular.version.full
   })
