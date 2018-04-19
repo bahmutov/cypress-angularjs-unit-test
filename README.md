@@ -87,6 +87,16 @@ it('shows hello', () => {
 
 Cypress can do everything [you can do from DevTools console](https://glebbahmutov.com/blog/angular-from-browser-console/) when dealing with Angular.js application.
 
+## Similar adaptors
+
+* [cypress-vue-unit-test](https://github.com/bahmutov/cypress-vue-unit-test)
+* [cypress-react-unit-test](https://github.com/bahmutov/cypress-react-unit-test)
+* [cypress-cycle-unit-test](https://github.com/bahmutov/cypress-cycle-unit-test)
+* [cypress-svelte-unit-test](https://github.com/bahmutov/cypress-svelte-unit-test)
+* [cypress-angular-unit-test](https://github.com/bahmutov/cypress-angular-unit-test)
+* [cypress-hyperapp-unit-test](https://github.com/bahmutov/cypress-hyperapp-unit-test)
+* [cypress-angularjs-unit-test](https://github.com/bahmutov/cypress-angularjs-unit-test)
+
 ### Small print
 
 Author: Gleb Bahmutov &lt;gleb.bahmutov@gmail.com&gt; &copy; 2018
