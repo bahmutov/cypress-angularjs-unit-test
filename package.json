@@ -91,7 +91,7 @@
     "nsp": "3.2.1",
     "pre-git": "3.17.1",
     "prettier-standard": "8.0.1",
-    "standard": "11.0.1",
+    "standard": "13.1.0",
     "cypress": "2.1.0",
     "travis-deploy-once": "4.4.1",
     "semantic-release": "15.13.3"
