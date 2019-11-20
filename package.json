@@ -82,7 +82,7 @@
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
-    "angular": "1.7.8",
+    "angular": "1.7.9",
     "ban-sensitive-files": "1.9.2",
     "dependency-check": "3.3.0",
     "deps-ok": "0.11.1",
