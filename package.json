@@ -92,12 +92,12 @@
     "pre-git": "3.17.1",
     "prettier-standard": "8.0.1",
     "standard": "11.0.1",
-    "cypress": "2.1.0",
+    "cypress": "3.8.2",
     "travis-deploy-once": "4.4.1",
     "semantic-release": "15.13.3"
   },
   "peerDependencies": {
     "angular": "^1.6.9",
-    "cypress": "^2.1.0"
+    "cypress": "^2.1.0 || ^3.0.0"
   }
 }
