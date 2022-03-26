@@ -83,7 +83,7 @@
   },
   "devDependencies": {
     "angular": "1.7.8",
-    "ban-sensitive-files": "1.9.2",
+    "ban-sensitive-files": "1.9.18",
     "dependency-check": "3.3.0",
     "deps-ok": "0.11.1",
     "git-issues": "1.3.1",
